@@ -4,49 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Niyati Pithva</title>
-    <meta
-      name="description"
-      content="Personal portfolio of Niyati Pithva, a software engineer specializing in web development, JavaScript, Python, and more."
-    />
+    <meta name="description" content="Personal portfolio of Niyati Pithva, a software engineer specializing in web development, JavaScript, Python, and more." />
     <meta name="author" content="Niyati Pithva" />
-
-    <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Niyati Pithva" />
-    <meta
-      property="og:description"
-      content="Personal portfolio of Niyati Pithva, a software engineer specializing in web development."
-    />
+    <meta property="og:description" content="Personal portfolio of Niyati Pithva, a software engineer specializing in web development." />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/meta-image.jpg" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Font Awesome for icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- Header and Navigation -->
+
+    <!-- ===== HEADER ===== -->
     <header class="header">
       <div class="container">
+        <div class="logo">NP</div>
         <nav class="nav">
           <ul class="nav-list">
-            <li><a href="#home" class="nav-link active"> Home</a></li>
-            <li><a href="#about" class="nav-link"> About </a></li>
-            <li><a href="#projects" class="nav-link"> Projects</a></li>
-            <li><a href="#skills" class="nav-link"> Skills</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#home"         class="nav-link active">Home</a></li>
+            <li><a href="#about"        class="nav-link">About</a></li>
+            <li><a href="#projects"     class="nav-link">Projects</a></li>
+            <li><a href="#skills"       class="nav-link">Skills</a></li>
+            <li><a href="#experince"    class="nav-link">Experience</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact"      class="nav-link">Contact</a></li>
           </ul>
         </nav>
         <div class="mobile-nav-toggle">
@@ -57,7 +47,7 @@
       </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ===== HERO ===== -->
     <section id="home" class="hero">
       <div class="container">
         <div class="hero-container">
@@ -66,68 +56,51 @@
               <span class="greeting">Hello, I'm</span>
               <span class="name">Niyati Pithva</span>
             </h1>
-            <h2 class="subtitle fade-in animation-delay-200">
-              Web Developer & Problem Solver
-            </h2>
+            <h2 class="subtitle fade-in animation-delay-200">Web Developer &amp; Problem Solver</h2>
             <p class="description fade-in animation-delay-400">
-              I build exceptional digital experiences with clean, efficient
-              code.
+              I build exceptional digital experiences with clean, efficient code.
             </p>
             <div class="cta-buttons fade-in animation-delay-600">
-              <a href="#projects" class="btn btn-primary">Projects</a>
-              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+              <a href="#projects" class="btn btn-primary"><i class="fas fa-folder-open"></i> Projects</a>
+              <a href="#contact"  class="btn btn-secondary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
             </div>
           </div>
-
           <div class="hero-image">
             <div class="blob floating"></div>
-            <img
-              src="images/IMG20260224082017.jpeg"
-              alt="Niyati Pithva"
-              class="profile-image"
-            />
+            <img src="images/IMG20260224082017.jpeg" alt="Niyati Pithva" class="profile-image" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About section -->
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="about section-padding">
       <div class="container">
         <div class="section-header">
-          <!-- <h2 class="section-title">About Me</h2> -->
           <div class="about-content">
             <div class="about-image">
               <img src="images/IMG20260224082017.jpeg" alt="Niyati Pithva" />
             </div>
             <div class="about-text">
-              <h3>Who I am</h3>
+              <h3>Who I Am</h3>
               <p>
-                I am a passionate and dedicated computer science student
-                currently pursuing my Master of Computer Applications (MCA) from
-                Dharmsinh Desai University. I completed my Bachelor of Computer
-                Applications (BCA) from the same university with First Class
-                with Distinction, which reflects my strong academic foundation
-                and commitment to excellence.
+                I am a passionate and dedicated computer science student currently pursuing my
+                Master of Computer Applications (MCA) from Dharmsinh Desai University. I completed
+                my Bachelor of Computer Applications (BCA) from the same university with First Class
+                with Distinction, which reflects my strong academic foundation and commitment to excellence.
               </p>
               <p>
-                I specialize in the MERN stack (MongoDB, Express.js, React.js,
-                Node.js) and enjoy building modern, scalable, and user-friendly
-                web applications. Along with MERN, I have solid knowledge of
-                HTML, CSS, JavaScript, and Core Java, as well as experience
-                working with MySQL databases.
+                I specialize in the MERN stack (MongoDB, Express.js, React.js, Node.js) and enjoy
+                building modern, scalable, and user-friendly web applications. Along with MERN, I have
+                solid knowledge of HTML, CSS, JavaScript, and Core Java, as well as experience working
+                with MySQL databases.
               </p>
               <p>
-                I am enthusiastic about learning new technologies, solving
-                real-world problems, and continuously improving my development
-                skills. I enjoy working on projects that challenge me and help
-                me grow as a developer.
+                I am enthusiastic about learning new technologies, solving real-world problems, and
+                continuously improving my development skills. I enjoy working on projects that challenge
+                me and help me grow as a developer.
               </p>
-              <a
-                href="images/Akshay-Jogarajiya-Resume.pdf"
-                download
-                class="btn btn-primary"
-              >
+              <a href="images/Niyati-Pithva-Resume.pdf" download class="btn btn-primary">
                 <i class="fas fa-download"></i> Download Resume
               </a>
             </div>
@@ -136,47 +109,330 @@
       </div>
     </section>
 
-    <!-- Project Section -->
+    <!-- ===== PROJECTS ===== -->
     <section id="projects" class="projects section-padding">
       <div class="container">
         <div class="section-header">
+          <span class="section-eyebrow">What I've Built</span>
           <h2 class="section-title">My Projects</h2>
         </div>
         <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card hover-element">
+
+          <div class="project-card">
             <div class="project-image">
               <img src="images/car_cure.png" alt="Car Cure" />
             </div>
             <div class="project-content">
-              <h3 class="project-title">Automobile service website</h3>
+              <h3 class="project-title">Automobile Service Website</h3>
               <p class="project-description">
-                A full-fledged booking system designed to help users book and
-                manage their travel packages seamlessly. It features secure data
-                handling, real-time availability, and high-performance backend
-                operations.
+                A full-fledged booking system designed to help users book and manage their vehicle
+                service appointments seamlessly. Features secure data handling, real-time slot
+                availability, and high-performance backend operations.
               </p>
               <div class="project-tech">
-                <span class="tech-badge">React  </span>
+                <span class="tech-badge">React</span>
                 <span class="tech-badge">Express</span>
                 <span class="tech-badge">Node</span>
                 <span class="tech-badge">MongoDB</span>
-                <span class="tech-badge">css</span>
-                
+                <span class="tech-badge">CSS</span>
               </div>
               <div class="project-links">
-                <a
-                  href="https://github.com/NiyatiPithva/car_cure"
-                  class="project-link"
-                  target="_blank"
-                >
+                <a href="https://github.com/NiyatiPithva/car_cure" class="project-link" target="_blank">
                   <i class="fab fa-github"></i> Source Code
                 </a>
               </div>
             </div>
           </div>
+
+          <div class="project-card">
+            <div class="project-image project-image--icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Campus Navigator App</h3>
+              <p class="project-description">
+                A smart campus navigation mobile app built during Applithon hackathon with real-time
+                indoor mapping and location services. Received recognition from the judging panel
+                for innovation and UI design within a 24-hour sprint.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge">Flutter</span>
+                <span class="tech-badge">Dart</span>
+                <span class="tech-badge">Firebase</span>
+                <span class="tech-badge">Maps API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i> Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">My Technical Arsenal</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+              <h3 class="skill-card-title">CS, System Design &amp; AI</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Data Structures &amp; Algorithms</li>
+              <li>Object-Oriented Programming</li>
+              <li>Operating Systems &amp; Linux</li>
+              <li>Database Management Systems</li>
+              <li>Software Engineering</li>
+              <li>System Design (HLD + LLD)</li>
+              <li>AI &amp; Machine Learning</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i class="fas fa-code"></i></div>
+              <h3 class="skill-card-title">Programming Languages</h3>
+            </div>
+            <ul class="skill-list">
+              <li>C++</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Dart</li>
+              <li>Kotlin</li>
+              <li>C# (.NET)</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i class="fas fa-layer-group"></i></div>
+              <h3 class="skill-card-title">Web &amp; Mobile Dev</h3>
+            </div>
+            <ul class="skill-list">
+              <li>React.js, Next.js &amp; Vue.js</li>
+              <li>Three.js (3D Web)</li>
+              <li>Node.js &amp; Express.js</li>
+              <li>React Native &amp; Flutter</li>
+              <li>Tailwind CSS &amp; Bootstrap</li>
+              <li>REST APIs &amp; GraphQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card-header">
+              <div class="skill-icon"><i class="fas fa-tools"></i></div>
+              <h3 class="skill-card-title">Cloud, DevOps &amp; Tools</h3>
+            </div>
+            <ul class="skill-list">
+              <li>Git / GitHub</li>
+              <li>Postman</li>
+              <li>Docker / Kubernetes</li>
+              <li>MySQL / MongoDB / Supabase</li>
+              <li>Firebase</li>
+              <li>AWS / Microsoft Azure</li>
+              <li>GoDaddy – Domain Management</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experince" class="experience section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">My Journey</span>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-badge"><i class="fas fa-briefcase"></i> Internship</span>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2025 – Apr 2025</span>
+            </div>
+            <h3 class="timeline-title">Mobile Developer Intern</h3>
+            <p class="timeline-company"><i class="fas fa-building"></i> TechSolutions Pvt. Ltd. &nbsp;·&nbsp; Ahmedabad, Gujarat</p>
+            <p class="timeline-desc">
+              Developed and maintained cross-platform mobile applications using Flutter and Dart.
+              Built responsive UI components following Material Design guidelines, integrated REST APIs
+              for real-time data fetching, and collaborated with the backend team to implement push
+              notification services. Optimized app performance, reducing load time by 30% through
+              lazy loading and efficient state management with Provider.
+            </p>
+            <div class="timeline-tags">
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Dart</span>
+              <span class="tech-badge">REST API</span>
+              <span class="tech-badge">Firebase</span>
+              <span class="tech-badge">Provider</span>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-meta">
+              <span class="timeline-badge"><i class="fas fa-trophy"></i> Competition</span>
+              <span class="timeline-date"><i class="far fa-calendar-alt"></i> March 2025</span>
+            </div>
+            <h3 class="timeline-title">Participant – Applithon</h3>
+            <p class="timeline-company"><i class="fas fa-university"></i> MCA Department, Dharmsinh Desai University &nbsp;·&nbsp; Nadiad, Gujarat</p>
+            <p class="timeline-desc">
+              Participated in Applithon, an inter-college app development hackathon organised by the
+              MCA Department of Dharmsinh Desai University. Built a fully functional mobile application
+              within a 24-hour time constraint as part of a 3-member team. Our solution focused on a
+              smart campus navigation app with real-time indoor mapping, earning recognition from the
+              judging panel for innovation and outstanding UI design.
+            </p>
+            <div class="timeline-tags">
+              <span class="tech-badge">Hackathon</span>
+              <span class="tech-badge">Flutter</span>
+              <span class="tech-badge">Team Work</span>
+              <span class="tech-badge">UI/UX</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ACHIEVEMENTS ===== -->
+    <section id="achievements" class="achievements section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Milestones</span>
+          <h2 class="section-title">Achievements</h2>
+        </div>
+        <div class="achievements-grid">
+
+          <div class="achievement-card reveal">
+            <div class="achievement-icon-wrap"><i class="fas fa-certificate"></i></div>
+            <div class="achievement-body">
+              <p class="achievement-type">Certification</p>
+              <h3 class="achievement-title">Mobile Developer Internship Certificate</h3>
+              <p class="achievement-desc">
+                Successfully completed a 3-month Mobile Development internship at TechSolutions Pvt. Ltd.,
+                building production-ready Flutter applications and contributing to the live product.
+              </p>
+            </div>
+            <div class="achievement-footer">
+              <span class="achievement-date"><i class="far fa-calendar-alt"></i> April 2025</span>
+              <a href="images/internship-certificate.pdf" download class="btn-download">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="achievement-icon-wrap"><i class="fas fa-trophy"></i></div>
+            <div class="achievement-body">
+              <p class="achievement-type">Hackathon</p>
+              <h3 class="achievement-title">Applithon – MCA Department Recognition</h3>
+              <p class="achievement-desc">
+                Received special recognition from the judging panel at Applithon 2025 for delivering
+                an innovative campus navigation solution with outstanding UI/UX design within 24 hours.
+              </p>
+            </div>
+            <div class="achievement-footer">
+              <span class="achievement-date"><i class="far fa-calendar-alt"></i> March 2025</span>
+              <a href="images/applithon-certificate.pdf" download class="btn-download">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+
+          <div class="achievement-card reveal">
+            <div class="achievement-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
+            <div class="achievement-body">
+              <p class="achievement-type">Academic</p>
+              <h3 class="achievement-title">BCA – First Class with Distinction</h3>
+              <p class="achievement-desc">
+                Graduated with First Class with Distinction in Bachelor of Computer Applications from
+                Dharmsinh Desai University, reflecting consistent academic excellence throughout.
+              </p>
+            </div>
+            <div class="achievement-footer">
+              <span class="achievement-date"><i class="far fa-calendar-alt"></i> 2024</span>
+              <a href="images/bca-marksheet.pdf" download class="btn-download">
+                <i class="fas fa-download"></i> Download
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section-padding">
+      <div class="container">
+        <div class="section-header contact-header">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:niyatipithva@gmail.com" class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-value">niyatipithva@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+919724277321" class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-info-label">Phone</p>
+              <p class="contact-info-value">+91 97242 77321</p>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/niyatipithva" target="_blank" class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <p class="contact-info-label">LinkedIn</p>
+              <p class="contact-info-value">Niyati Pithva</p>
+            </div>
+          </a>
+          <a href="https://github.com/NiyatiPithva" target="_blank" class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-info-label">GitHub</p>
+              <p class="contact-info-value">NiyatiPithva</p>
+            </div>
+          </a>
+          <a href="#" class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-globe"></i></div>
+            <div>
+              <p class="contact-info-label">Website</p>
+              <p class="contact-info-value">niyatipithva.dev</p>
+            </div>
+          </a>
+          <div class="contact-card reveal" style="cursor:default;">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-info-label">Address</p>
+              <p class="contact-info-value">Nadiad, Gujarat, India</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-footer">
+          <p>© 2026 Niyati Pithva. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
