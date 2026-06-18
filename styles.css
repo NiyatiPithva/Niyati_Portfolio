@@ -145,7 +145,19 @@ body {
   justify-content: center;
   letter-spacing: 0.05em;
 }
-
+.logoName {
+  display: flex;
+  gap: 1.5rem;
+}
+.lName {
+  /* margin-top: 0.5rem; */
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: 800;
+}
 .nav { display: flex; align-items: center; }
 
 .nav-list { display: flex; gap: 2rem; }
@@ -853,7 +865,7 @@ body {
 }
 
 .contact-info-value {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--foreground);
   font-weight: 500;
 }
