@@ -28,26 +28,44 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 
 // ============================================================
 //  ACTIVE NAV ON SCROLL
+//  Fix: use the BOTTOM of the page to detect last section
 // ============================================================
-window.addEventListener("scroll", () => {
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".nav-link");
-  let current = "";
+const navLinks = document.querySelectorAll(".nav-link");
 
+function updateActiveNav() {
+  const sections = document.querySelectorAll("section[id]");
+  const scrollY   = window.scrollY;
+  const winHeight = window.innerHeight;
+  const docHeight = document.documentElement.scrollHeight;
+
+  // If user is at (or very near) the bottom, force "contact" active
+  if (scrollY + winHeight >= docHeight - 10) {
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#contact") link.classList.add("active");
+    });
+    return;
+  }
+
+  let current = "";
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 100;
-    if (window.scrollY >= sectionTop) {
+    const sectionTop = section.offsetTop - 120;
+    console.log("sectionTop ..",sectionTop);
+    
+    if (scrollY >= sectionTop) {
       current = section.getAttribute("id");
+      console.log("current  .",current);
+      
     }
   });
 
   navLinks.forEach((link) => {
     link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
+    if (link.getAttribute("href") === `#${current}`) link.classList.add("active");
   });
-});
+}
+
+window.addEventListener("scroll", updateActiveNav);
 
 // ============================================================
 //  SCROLL REVEAL

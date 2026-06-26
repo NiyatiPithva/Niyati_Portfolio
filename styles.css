@@ -333,7 +333,7 @@ body {
 
 .cta-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
